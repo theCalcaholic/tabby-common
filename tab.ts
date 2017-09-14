@@ -1,12 +1,13 @@
 export class TabData {
   title: string;
   content: string;
-
+  id: number;
 }
 
 export class Tab {
     private _title: string;
     private _content: string;
+    id: number;
     get title(): string {
       return this._title;
     };
@@ -34,12 +35,13 @@ export class Tab {
     OnChange: Function;
 
     toData(): TabData {
-      return { title: this._title, content: this._content }
+      return { title: this._title, content: this._content, id: this.id }
     }
 }
 
 export function tabFromData(data: TabData): Tab {
       let tab = new Tab(data.title);
       tab.content = data.content;
+      tab.id = data.id;
       return tab;
 }
