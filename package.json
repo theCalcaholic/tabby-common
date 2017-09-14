@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/theCalcaholic/tabby-common/issues"
   },
-  "homepage": "https://github.com/theCalcaholic/tabby-common#readme"
+  "homepage": "https://github.com/theCalcaholic/tabby-common#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.28",
+    "typescript": "^2.5.2"
+  }
 }
