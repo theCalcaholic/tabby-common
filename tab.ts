@@ -12,17 +12,21 @@ export class Tab {
       return this._title;
     };
     set title(theTitle: string) {
-      console.log("set Tab.title");
-      this._title = theTitle;
-      this.OnChange();
+      if(this.title !== theTitle) {
+        console.log("set Tab.title");
+        this._title = theTitle;
+        this.OnChange();
+      }
     }
     get content(): string {
       return this._content;
     }
     set content(theContent: string) {
-      console.log("set Tab.content");
-      this._content = theContent;
-      this.OnChange();
+      if(this.content !== theContent) {
+        console.log("set Tab.content");
+        this._content = theContent;
+        this.OnChange();
+      }
     }
     active: false;
 
