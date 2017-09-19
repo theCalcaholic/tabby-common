@@ -26,7 +26,7 @@ export class Tab {
     }
     active: false;
 
-    constructor(title: string, onChange?: Function) {
+    constructor(id:number, title: string, onChange?: Function) {
       this._title = title;
       this._content = '';
       this.OnChange = onChange || (()=>{});
@@ -40,7 +40,7 @@ export class Tab {
 }
 
 export function tabFromData(data: TabData): Tab {
-      let tab = new Tab(data.title);
+      let tab = new Tab(data.id, data.title);
       tab.content = data.content;
       tab.id = data.id;
       return tab;
