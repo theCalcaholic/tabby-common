@@ -10,7 +10,7 @@ let styles = [
   TestStyle
 ];
 
-let defaultStyle = new ClassicBrownStyle().id;
+let defaultStyle = (new ClassicBrownStyle()).id;
 
 
 export {styles, defaultStyle};
