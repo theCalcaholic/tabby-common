@@ -16,4 +16,14 @@ export abstract class Style {
     });
     return css.toString();
   }
+
+  loadParameters(params:Array<Parameter>):void {
+    params.forEach(p1 => {
+      this.parameters.forEach((p2, i) => {
+        if( p1.id == p2.id ) {
+          this.parameters[i] = p1;
+        }
+      });
+    });
+  }
 }
