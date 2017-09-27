@@ -5,8 +5,7 @@ class DefaultStyle extends ClassicBrownStyle {
 }
 
 let styles = [
-  ClassicBrownStyle,
-  DefaultStyle
+  ClassicBrownStyle
 ];
 
 
