@@ -1,11 +1,10 @@
 import { Style, Parameter } from '../models/style';
 
-let cssTemplate
-= `body {
+let cssTemplate = `\
+body {
   background-image: url(\${backgroundUrl});
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
 }
 .tab {
   visibility: hidden;
@@ -13,7 +12,6 @@ let cssTemplate
   border-color: red;
   border-width: 1px;
   border-style: solid;
-  min-height: 400px;
 }
 .tab + div {
   display: none;
@@ -73,7 +71,7 @@ let cssTemplate
 }
 #editmode .tab + div {
   display: block;
-}`
+}`;
 
 export class ClassicBrownStyle extends Style {
   id = "classicBrown";
