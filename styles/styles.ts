@@ -1,8 +1,8 @@
 import { ClassicBrownStyle } from './classicbrown.style';
 
 let styles = {
-  default: ClassicBrownStyle,
-  classicBrown: ClassicBrownStyle
+  default: new ClassicBrownStyle(),
+  classicBrown: new ClassicBrownStyle()
 };
 
 
