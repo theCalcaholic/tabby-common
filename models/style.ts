@@ -10,11 +10,11 @@ export abstract class Style {
   parameters:Array<Parameter>;
 
   exportString():string {
-    let css = new String(this.template);
+    let css = this.template.toString();
     this.parameters.forEach((param:Parameter) => {
       css.replace(param.id, param.value);
     });
-    return css.toString();
+    return css;
   }
 
   loadParameters(params:Array<Parameter>):void {
