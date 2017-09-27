@@ -1,7 +1,7 @@
 import { Style } from '../models/style';
 
 export class TestStyle extends Style {
-  static id = "testStyle";
+  id = "testStyle";
   protected static template = "";
   parameters = [
     {

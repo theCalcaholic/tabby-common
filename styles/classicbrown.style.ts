@@ -76,7 +76,7 @@ let cssTemplate
 }`
 
 export class ClassicBrownStyle extends Style {
-  static id = "classicBrown";
+  id = "classicBrown";
   parameters = [
     {
       id: "backgroundUrl",

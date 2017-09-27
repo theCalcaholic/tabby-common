@@ -5,12 +5,12 @@ export class Parameter {
 }
 
 export abstract class Style {
-  static id:string;
-  protected static template:string;
+  id:string;
+  protected template:string;
   parameters:Array<Parameter>;
 
   exportString():string {
-    let css = new String(Style.template);
+    let css = new String(this.template);
     this.parameters.forEach((param:Parameter) => {
       css.replace(param.id, param.value);
     });
