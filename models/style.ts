@@ -13,7 +13,7 @@ export abstract class Style {
     let css = this.template.toString();
     this.parameters.forEach((param:Parameter) => {
       console.log("replacing '${" + param.id + "}' with " + param.value);
-      css.replace("${" + param.id + "}", param.value);
+      css = css.replace("${" + param.id + "}", param.value);
     });
     return css;
   }
