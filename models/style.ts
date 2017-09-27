@@ -20,7 +20,9 @@ export abstract class Style {
 
   loadParameters(params:Array<Parameter>):void {
     params.forEach(p1 => {
-      this.parameters.forEach((p2, i) => {
+      this.parameters.forEach((p2:Parameter, i:number) => {
+        if(p1) console.log( p1.id);
+        if(p2) console.log(p2.id);
         if( p2 && p1.id == p2.id ) {
           this.parameters[i] = p1;
         }
