@@ -1,9 +1,13 @@
 import { ClassicBrownStyle } from './classicbrown.style';
 
-let styles = {
-  default: new ClassicBrownStyle(),
-  classicBrown: new ClassicBrownStyle()
-};
+class DefaultStyle extends ClassicBrownStyle {
+  id: 'default';
+}
+
+let styles = [
+  ClassicBrownStyle,
+  DefaultStyle
+];
 
 
 export {styles};
