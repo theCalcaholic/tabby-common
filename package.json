@@ -1,6 +1,6 @@
 {
   "name": "tabby-common",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Shared ressources between tabby-frontend and tabby-backend.",
   "main": "index.js",
   "scripts": {
