@@ -6,7 +6,7 @@ export class Parameter {
 
 export abstract class Style {
   id:string;
-  protected template:string;
+  protected template:string = '';
   parameters:Array<Parameter>;
 
   exportString():string {

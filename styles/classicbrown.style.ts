@@ -84,5 +84,5 @@ export class ClassicBrownStyle extends Style {
       description: "Background URL"
     },
   ];
-  protected static template = cssTemplate;
+  protected template = cssTemplate;
 }
