@@ -2,7 +2,7 @@ import { Style } from '../models/style';
 
 export class TestStyle extends Style {
   id = "testStyle";
-  protected template = "";
+  protected template = "body {background-color: blue;}";
   parameters = [
     {
       id: "testParam",
