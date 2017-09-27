@@ -77,7 +77,7 @@ let cssTemplate
 
 export class ClassicBrownStyle extends Style {
   static id = "classicBrown";
-  protected parameters = [
+  parameters = [
     {
       id: "backgroundUrl",
       value: "https://www.bienenfisch-design.com/wp-content/uploads/wpsg_produktbilder/6410/tn/s-800-600-feine-pergament-textur-003.jpg",

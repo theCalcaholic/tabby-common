@@ -3,7 +3,7 @@ import { Style } from '../models/style';
 export class TestStyle extends Style {
   static id = "testStyle";
   protected static template = "";
-  protected parameters = [
+  parameters = [
     {
       id: "testParam",
       description: "Test Parameter",
