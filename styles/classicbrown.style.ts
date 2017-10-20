@@ -19,7 +19,7 @@ body {
 .tab:checked + div {
   display: block;
 }
-.tabcontent p, .tabtitle, .tabcontent li {
+.tabcontent *, .tabtitle {
   font-family: Calibri, Arial, sans-serif;
   color: #880F0F;
   font-size: medium;
@@ -44,10 +44,10 @@ body {
 .tabtitle {
   margin: 5px 10px;
   padding: 5px;
-  font-size: 1.1em;
+  font-size: \${tabFontSize};
   line-height: 2em;
-  background-color: #880F0F;
-  color: white;/*#440808;*/
+  background-color: \${tabBackgroundColour};
+  color: \${tabTextColour};
   cursor: pointer;
   /*font-weight: bold;*/
   border-radius: 5px;
@@ -56,15 +56,6 @@ body {
   background-color: #EEEEEE;
   color: #880F0F;
 }
-/*.profilepic {
-  border-width: 2px;
-  border-style: solid;
-  margin: 20px 30px;
-  width: 250px;
-  height: 273px;
-  border-radius: 15em;
-  float: right;
-}*/
 .contentcontainer {
   padding: 10px;
   min-height: 80%;
@@ -81,6 +72,21 @@ export class ClassicBrownStyle extends Style {
       value: "https://www.bienenfisch-design.com/wp-content/uploads/wpsg_produktbilder/6410/tn/s-800-600-feine-pergament-textur-003.jpg",
       description: "Background URL"
     },
+    {
+      id: "tabBackgroundColour",
+      value: "#880F0F",
+      description: "Tab Background Colour"
+    },
+    {
+      id: "tabTextColour",
+      value: "white",
+      description: "Tab Text Colour"
+    },
+    {
+      id: "tabFontSize",
+      value: "1.1em",
+      description: "Tab Font Size"
+    }
   ];
   protected template = cssTemplate;
 }
