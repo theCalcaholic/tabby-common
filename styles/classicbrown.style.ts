@@ -44,7 +44,7 @@ body {
 .tabtitle {
   margin: 5px 10px;
   padding: 5px;
-  font-size: \${tabFontSize};
+  font-size: \${tabFontSize}em;
   line-height: 2em;
   background-color: \${tabBackgroundColour};
   color: \${tabTextColour};
@@ -71,33 +71,25 @@ export class ClassicBrownStyle extends Style {
       id: "backgroundUrl",
       value: "https://www.bienenfisch-design.com/wp-content/uploads/wpsg_produktbilder/6410/tn/s-800-600-feine-pergament-textur-003.jpg",
       description: "Background URL",
-      type: "url",
-      attributes: {}
+      type: "url"
     },
     {
       id: "tabBackgroundColour",
       value: "#880F0F",
       description: "Tab Background Colour",
-      type: "color",
-      attributes: {}
+      type: "color"
     },
     {
       id: "tabTextColour",
       value: "#FFFFFF",
       description: "Tab Text Colour",
-      type: "color",
-      attributes: {}
+      type: "color"
     },
     {
       id: "tabFontSize",
-      value: "1.1em",
+      value: "1.1",
       description: "Tab Font Size",
-      type: "number",
-      attributes: {
-        step: "0.3",
-        min: "0",
-        max: "5"
-      }
+      type: "number"
     }
   ];
   protected template = cssTemplate;
