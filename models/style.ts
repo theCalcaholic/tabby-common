@@ -2,6 +2,7 @@ export class Parameter {
   id: string;
   value:any;
   description:string;
+  type:string;
 }
 
 export abstract class Style {

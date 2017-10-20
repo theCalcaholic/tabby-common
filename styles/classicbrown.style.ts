@@ -70,22 +70,26 @@ export class ClassicBrownStyle extends Style {
     {
       id: "backgroundUrl",
       value: "https://www.bienenfisch-design.com/wp-content/uploads/wpsg_produktbilder/6410/tn/s-800-600-feine-pergament-textur-003.jpg",
-      description: "Background URL"
+      description: "Background URL",
+      type: "url"
     },
     {
       id: "tabBackgroundColour",
       value: "#880F0F",
-      description: "Tab Background Colour"
+      description: "Tab Background Colour",
+      type: "color"
     },
     {
       id: "tabTextColour",
       value: "white",
-      description: "Tab Text Colour"
+      description: "Tab Text Colour",
+      type: "color"
     },
     {
       id: "tabFontSize",
       value: "1.1em",
-      description: "Tab Font Size"
+      description: "Tab Font Size",
+      type: "number"
     }
   ];
   protected template = cssTemplate;
