@@ -21,7 +21,7 @@ body {
 }
 .tabcontent *, .tabtitle {
   font-family: Calibri, Arial, sans-serif;
-  color: #880F0F;
+  color: \${fontColour};
   font-size: medium;
 }
 .tabcontent a {
@@ -90,6 +90,12 @@ export class ClassicBrownStyle extends Style {
       value: "1.1",
       description: "Tab Font Size",
       type: "number"
+    },
+    {
+      id: "fontColour",
+      value: "#880F0F",
+      description: "Font Colour",
+      type: "color"
     }
   ];
   protected template = cssTemplate;

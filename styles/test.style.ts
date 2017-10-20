@@ -2,7 +2,7 @@ import { Style } from '../models/style';
 
 let cssTemplate = `\
 body {
-  background-image: url(http://www.planwallpaper.com/static/images/303836.jpg);
+  background-image: url(\${backgroundUrl});
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,10 +78,10 @@ export class TestStyle extends Style {
   protected template = cssTemplate;
   parameters = [
     {
-      id: "testParam",
-      description: "Test Parameter",
-      value:"5",
-      type: "number"
+      id: "backgroundUrl",
+      description: "Background URL",
+      value:"http://www.planwallpaper.com/static/images/303836.jpg",
+      type: "url"
     }
   ];
 }
