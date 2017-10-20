@@ -71,25 +71,33 @@ export class ClassicBrownStyle extends Style {
       id: "backgroundUrl",
       value: "https://www.bienenfisch-design.com/wp-content/uploads/wpsg_produktbilder/6410/tn/s-800-600-feine-pergament-textur-003.jpg",
       description: "Background URL",
-      type: "url"
+      type: "url",
+      attributes: {}
     },
     {
       id: "tabBackgroundColour",
       value: "#880F0F",
       description: "Tab Background Colour",
-      type: "color"
+      type: "color",
+      attributes: {}
     },
     {
       id: "tabTextColour",
       value: "#FFFFFF",
       description: "Tab Text Colour",
-      type: "color"
+      type: "color",
+      attributes: {}
     },
     {
       id: "tabFontSize",
       value: "1.1em",
       description: "Tab Font Size",
-      type: "number"
+      type: "number",
+      attributes: {
+        step: "0.3",
+        min: "0",
+        max: "5"
+      }
     }
   ];
   protected template = cssTemplate;

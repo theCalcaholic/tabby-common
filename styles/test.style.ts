@@ -81,7 +81,8 @@ export class TestStyle extends Style {
       id: "testParam",
       description: "Test Parameter",
       value:"5",
-      type: "number"
+      type: "number",
+      attributes: []
     }
   ];
 }
