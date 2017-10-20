@@ -81,7 +81,7 @@ export class ClassicBrownStyle extends Style {
     },
     {
       id: "tabTextColour",
-      value: "white",
+      value: "#FFFFFF",
       description: "Tab Text Colour",
       type: "color"
     },
