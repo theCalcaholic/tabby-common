@@ -7,6 +7,7 @@ export class ProfileData {
   title: string;
   styleId: string;
   styleParameters: Parameter[];
+  bgMusicUrl: string
 }
 
 export class Profile {
@@ -15,6 +16,7 @@ export class Profile {
   tabs: Tab[];
   styleId: string;
   styleParameters: Parameter[];
+  bgMusicUrl: string;
 
   toData(): ProfileData {
     let data = new ProfileData();
@@ -23,6 +25,7 @@ export class Profile {
     data.tabs = this.tabs.map((tab) => tab.toData());
     data.styleId = this.styleId;
     data.styleParameters = this.styleParameters;
+    data.bgMusicUrl = this.bgMusicUrl;
     return data;
   }
 }
@@ -37,5 +40,6 @@ export function profileFromData(data: ProfileData): Profile {
     });
     profile.styleId = data.styleId;
     profile.styleParameters = data.styleParameters;
+    profile.bgMusicUrl = data.bgMusicUrl;
     return profile;
 }
