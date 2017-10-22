@@ -13,28 +13,18 @@ body {
   border-width: 1px;
   border-style: solid;
 }
-.tab + div {
-  display: none;
-}
 .tab:checked + div {
   display: block;
 }
-.tabcontent *, .tabtitle {
+.tabcontent *, .cke_editable *, .tabtitle {
   font-family: Calibri, Arial, sans-serif;
   color: \${fontColour};
   font-size: medium;
 }
-.tabcontent a {
+.tabcontent a, .cke_editable a {
   color: #FF2222;
 }
-.tabcontent ul {
-  list-style: none;
-  padding-left: 0;
-}
-.tabcontent li {
-  margin-bottom: 1em;
-}
-.tabcontent img {
+.tabcontent img, .cke_editable img {
   max-width: 300px;
   margin: 10px;
   border-style: solid;
@@ -59,9 +49,6 @@ body {
 .contentcontainer {
   padding: 10px;
   min-height: 80%;
-}
-#editmode .tab + div {
-  display: block;
 }`;
 
 export class ClassicBrownStyle extends Style {
