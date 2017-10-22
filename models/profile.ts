@@ -7,7 +7,7 @@ export class ProfileData {
   title: string;
   styleId: string;
   styleParameters: Parameter[];
-  bgMusicUrl: string
+  bgMusicUrl: string | null
 }
 
 export class Profile {
@@ -16,7 +16,7 @@ export class Profile {
   tabs: Tab[];
   styleId: string;
   styleParameters: Parameter[];
-  bgMusicUrl: string;
+  bgMusicUrl: string | null;
 
   toData(): ProfileData {
     let data = new ProfileData();
