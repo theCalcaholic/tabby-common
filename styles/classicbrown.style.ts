@@ -3,6 +3,7 @@ import { Style, Parameter } from '../models/style';
 let cssTemplate = `\
 body {
   background-image: url(\${backgroundUrl});
+  background-color: \${backgroundColour};
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -35,7 +36,7 @@ body {
   border-color: #440808;
 }
 .tabtitle {
-  margin: 5px 10px;
+  margin: 5px calc(\${tabSpacing}px / 2);
   padding: 5px;
   font-size: \${tabFontSize}em;
   line-height: 2em;
@@ -43,7 +44,7 @@ body {
   color: \${tabTextColour};
   cursor: pointer;
   /*font-weight: bold;*/
-  border-radius: 5px;
+  border-radius: \${tabCornerRadius}px;
 }
 .tabtitle:hover {
   background-color: #EEEEEE;
@@ -64,6 +65,12 @@ export class ClassicBrownStyle extends Style {
       type: "url"
     },
     {
+      id: "backgroundColour",
+      value: "#FFFFFF",
+      description: "Background Colour",
+      type: "color"
+    },
+    {
       id: "tabBackgroundColour",
       value: "#880F0F",
       description: "Tab Background Colour",
@@ -79,6 +86,18 @@ export class ClassicBrownStyle extends Style {
       id: "tabFontSize",
       value: "1.1",
       description: "Tab Font Size",
+      type: "number"
+    },
+    {
+      id: "tabSpacing",
+      value: "10",
+      description: "Tab Spacing",
+      type: "number"
+    },
+    {
+      id: "tabCornerRadius",
+      value: "5",
+      description: "Tab Corner Radius",
       type: "number"
     },
     {
