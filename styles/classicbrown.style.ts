@@ -13,6 +13,9 @@ body {
   border-width: 1px;
   border-style: solid;
 }
+.tab + div {
+  display: none;
+}
 .tab:checked + div {
   display: block;
 }
