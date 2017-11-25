@@ -3,6 +3,7 @@ export class Parameter {
   value:any;
   description:string;
   type:string;
+  options?:Array<string>;
 }
 
 export abstract class Style {
