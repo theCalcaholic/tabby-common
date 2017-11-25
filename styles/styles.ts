@@ -1,4 +1,5 @@
 import { ClassicBrownStyle } from './classicbrown.style';
+import { ElegantMintStyle } from './elegantmint.style';
 import { TestStyle } from './test.style';
 
 class DefaultStyle extends ClassicBrownStyle {
@@ -7,6 +8,7 @@ class DefaultStyle extends ClassicBrownStyle {
 
 let styles = [
   ClassicBrownStyle,
+  ElegantMintStyle,
   TestStyle
 ];
 

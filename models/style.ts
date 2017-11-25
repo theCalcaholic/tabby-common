@@ -8,13 +8,14 @@ export class Parameter {
 export abstract class Style {
   id:string;
   protected template:string = '';
+  htmlTemplate: number = 0;
   parameters:Array<Parameter>;
 
   exportString():string {
     let css = this.template.toString();
     this.parameters.forEach((param:Parameter) => {
       console.log("replacing '${" + param.id + "}' with " + param.value);
-      css = css.replace("${" + param.id + "}", param.value);
+      css = css.replace(new RegExp("\\$\\{" + param.id + "\\}", 'g'), param.value);
     });
     return css;
   }

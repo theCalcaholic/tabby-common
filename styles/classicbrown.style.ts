@@ -50,6 +50,9 @@ body {
   background-color: #EEEEEE;
   color: #880F0F;
 }
+.tabcontainer {
+  padding: 10px;
+}
 .contentcontainer {
   padding: 10px;
   min-height: 80%;
@@ -57,6 +60,7 @@ body {
 
 export class ClassicBrownStyle extends Style {
   id = "classicBrown";
+  htmlTemplate = 0;
   parameters = [
     {
       id: "backgroundUrl",
