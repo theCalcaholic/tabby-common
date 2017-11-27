@@ -122,8 +122,9 @@ body {
 
 .tablink {
   display:block;
-  width:400px;
-  height:220px;
+  /*width:400px;
+  height:220px;*/
+  width:40%;
   background:#ddd;
   background-size:cover;
   line-height:220px;
