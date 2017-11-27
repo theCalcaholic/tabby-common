@@ -199,7 +199,6 @@ body {
 
 .sidebar {
   float: left;
-  height: 100%;
   display: block;
   margin-right: 2em;
   font-family: helvetica,arial,sans-serif;
