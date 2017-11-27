@@ -7,7 +7,7 @@ body {
 }
 
 #container {
-  width:1000px;
+  width:100%;
   margin:0 auto;
   background:\${backgroundColor};
   font-family:helvetica,arial,sans-serif;
