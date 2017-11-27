@@ -24,6 +24,11 @@ body {
 #titles {
   text-align:center;
   padding:3% 15% 0 15%;
+
+}
+
+#topbar {
+  height: \${titleMargin}px;
 }
 
 #title, #subtitle {
@@ -303,6 +308,12 @@ export class ElegantMintStyle extends Style {
       description: "Title Visibility",
       type: "dropdown",
       options: ["visible","hidden"]
+    },
+    {
+      id: "titleMargin",
+      value: "0",
+      description: "Title Margin",
+      type: "number"
     },
     {
       id: "menuTitle",
