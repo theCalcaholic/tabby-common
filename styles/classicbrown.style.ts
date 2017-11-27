@@ -90,7 +90,8 @@ export class ClassicBrownStyle extends Style {
       id: "tabFontSize",
       value: "1.1",
       description: "Tab Font Size",
-      type: "number"
+      type: "number",
+      step: 0.1
     },
     {
       id: "tabSpacing",

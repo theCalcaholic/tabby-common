@@ -4,6 +4,9 @@ export class Parameter {
   description:string;
   type:string;
   options?:Array<string>;
+  step?:number;
+  min?:number;
+  max?:number;
 }
 
 export abstract class Style {

@@ -27,10 +27,6 @@ body {
 
 }
 
-#topbar {
-  height: \${titleMargin}px;
-}
-
 #title, #subtitle {
   font-family:Palatino Linotype;
   font-style:italic;
@@ -75,7 +71,8 @@ body {
   margin-bottom:35px;
   -webkit-box-shadow:1px 1px 2px 0 rgba(0,0,0,0.5);
   box-shadow:1px 1px 2px 0 rgba(0,0,0,0.5);
-  visibility: \${monogramVisibility}
+  visibility: \${monogramVisibility};
+  margin-top: \${titleMargin}px;
 }
 
 #content {
@@ -317,8 +314,11 @@ export class ElegantMintStyle extends Style {
     {
       id: "titleMargin",
       value: "0",
-      description: "Title Margin",
-      type: "number"
+      description: "Title Offset",
+      type: "number",
+      step: 1,
+      min: -300,
+      max: 300
     },
     {
       id: "menuTitle",
