@@ -230,6 +230,8 @@ body {
   padding-left: 5px;
 }
 
+\${customStyles}
+
 `;
 
 export class ElegantMintStyle extends Style {
@@ -334,6 +336,12 @@ export class ElegantMintStyle extends Style {
       description: "Menu Title Visibility",
       type: "dropdown",
       options: ["visible","hidden"]
+    },
+    {
+      id: "customStyles",
+      value: "",
+      description: "Custom CSS",
+      type: "multiline"
     }
 
   ];
