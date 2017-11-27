@@ -148,6 +148,7 @@ body {
   text-decoration:none;
   font-weight:bold;
   font-size:18px;
+  clear: both;
 }
 
 #footer {
