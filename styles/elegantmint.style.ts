@@ -192,6 +192,38 @@ body {
   content: "\${monogramLetters}";
 }
 
+.sidebar {
+  float: left;
+  height: 100%;
+  display: block;
+  margin-right: 2em;
+  font-family: helvetica,arial,sans-serif;
+  font-size:15px;
+}
+
+.sidebar h3 {
+  color: #ADD7C9;
+  letter-spacing: 3px;
+  font-size: inherit;
+}
+
+.sidebar b, .sidebar strong {
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-family: helvetica,arial,sans-serif;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-left:15px;
+  padding-left: 0;
+}
+
+.sidebar li {
+  border-left: 2px solid #CDC3CC;
+  padding-left: 5px;
+}
+
 `;
 
 export class ElegantMintStyle extends Style {
