@@ -140,8 +140,8 @@ body {
   width:120px;
   padding:8px 0 8px 3px;
   margin:25px auto 20px auto;
-  border:2px solid \${color1};
-  color:\${color1};
+  border:2px solid \${homeLinkColor};
+  color:\${homeLinkcolor};
   letter-spacing:3px;
   text-align:center;
   text-decoration:none;
@@ -259,6 +259,12 @@ export class ElegantMintStyle extends Style {
       value: "#ffffff",
       description: "Background Color",
       type: "color"
+    },
+    {
+        id: "homeLinkColor",
+        value: "#ADD7C9",
+        description: "Home Button Color",
+        type: "color"
     },
     {
       id: "footerTitle",
