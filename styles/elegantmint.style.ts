@@ -141,7 +141,7 @@ body {
   padding:8px 0 8px 3px;
   margin:25px auto 20px auto;
   border:2px solid \${homeLinkColor};
-  color:\${homeLinkcolor};
+  color:\${homeLinkColor};
   letter-spacing:3px;
   text-align:center;
   text-decoration:none;
